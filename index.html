@@ -68,38 +68,34 @@
     <div class="outer">
       <section id="main">
   
-    <article id="hello-Hello World" class="article article-type-hello" itemscope itemprop="blogPost">
+    <article id="post-子域名收集" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/09/Hello%20World/" class="article-date">
-  <time datetime="2020-09-25T14:42:05.000Z" itemprop="datePublished">2020-09-25</time>
+    <a href="/2020/09/%E5%AD%90%E5%9F%9F%E5%90%8D%E6%94%B6%E9%9B%86/" class="article-date">
+  <time datetime="2020-09-25T14:50:47.186Z" itemprop="datePublished">2020-09-25</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/Hello%20World/">World</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="crt-sh"><a href="#crt-sh" class="headerlink" title="crt.sh"></a>crt.sh</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -s <span class="string">&quot;https://crt.sh/?q=baidu.com&amp;output=json&quot;</span> | jq -r <span class="string">&#x27;.[].name_value&#x27;</span>| sed <span class="string">&#x27;s/\*\.//g&#x27;</span> | sort -u | tee -a baidu.txt</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="sublist3r"><a href="#sublist3r" class="headerlink" title="sublist3r"></a>sublist3r</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">参数详解 建议python2.7</span><br><span class="line"></span><br><span class="line">-d -domain要枚举子域的域名</span><br><span class="line">-b -bruteforce启用subbrute bruteforce模块</span><br><span class="line">-p -ports根据特定的tcp端口扫描找到的子域</span><br><span class="line">-v --verbose启用详细模式并实时显示结果</span><br><span class="line">-t -threads用于subbrute bruteforce的线程数</span><br><span class="line">-e - 引擎指定逗号分隔的搜索引擎列表</span><br><span class="line">-o -output将结果保存到文本文件</span><br><span class="line">-h -<span class="built_in">help</span>显示帮助信息并退出</span><br><span class="line"></span><br><span class="line">python sublist3r.py -d baidu.com -b -t 50 -p 80,443,8080 -v -o baidu.txt</span><br><span class="line"></span><br><span class="line">sudo nohup python sublist3r.py -d baidu.com -b -t 50 -p 80,443,8080 -o /opt/Sublist3r/baidu.txt &amp;</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://blog.aguai.pro/2020/09/Hello%20World/" data-id="ckficzfzo0000lktt4koy2z6e" class="article-share-link" data-share="baidu" data-title="World">分享到</a>
+        <a data-url="http://blog.aguai.pro/2020/09/%E5%AD%90%E5%9F%9F%E5%90%8D%E6%94%B6%E9%9B%86/" data-id="ckfid6gb60000d0ttf6omgyfj" class="article-share-link" data-share="baidu" data-title="">分享到</a>
       
 
       
-        <a href="http://blog.aguai.pro/2020/09/Hello%20World/#ds-thread" class="article-comment-link">评论</a>
+        <a href="http://blog.aguai.pro/2020/09/%E5%AD%90%E5%9F%9F%E5%90%8D%E6%94%B6%E9%9B%86/#ds-thread" class="article-comment-link">评论</a>
       
 
       
@@ -137,7 +133,7 @@
       <ul>
         
           <li>
-            <a href="/2020/09/Hello%20World/">World</a>
+            <a href="/2020/09/%E5%AD%90%E5%9F%9F%E5%90%8D%E6%94%B6%E9%9B%86/">(no title)</a>
           </li>
         
       </ul>
